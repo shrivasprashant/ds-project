@@ -14,7 +14,7 @@ const Home = () => {
       <Carsole />
       <BeautyImage/>
       <ActiveSlider/>
-      <ProductList/>
+      {/* <ProductList/> */}
       <Layer/>
       <Bottom/>
     </div>

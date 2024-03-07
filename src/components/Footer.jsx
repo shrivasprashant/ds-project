@@ -20,7 +20,7 @@ const Footer = () => {
   }, []);
   return (
     <div className='w-full h-screen bg-[#FFFFFF] relative z-10 md:py-20'>
-      <div className="raper w-full min-h-[98%] bg-zinc-800 md:flex gap-20 mb-6 py-10 px-5 md:px-32 relative">
+      <div className="raper w-full min-h-[98%] bg-zinc-800 md:flex gap-20  py-10 px-5 md:px-32 relative">
         <div className="w-[100%] py-6 text-center md:w-[30%] h-[100%] ">
           <img className='ml-[25%] md:ml-10' src={vitotaLogo} alt="" />
           <p className='leading-9 mt-6 text-sm'>It is a long established fact that a <br /> reader will be distracted by the <br /> readable content.Lorem Ipsum is <br /> simply dummy text of been the <br /> industry's standard ...</p>
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
         <div className="absolute right-6 bottom-10 p-4 bg-red-400 rounded-full"><a href=""><MdKeyboardDoubleArrowUp /></a></div>
       </div>
-      <div className="ftr w-full py-2 px-10 text-black">
+      <div className="ftr w-full py-8 px-10 text-black bg-red-200">
         <p className='text-black'>{currentYear} -   Copy Right by XYZ</p>
       </div>
     </div>

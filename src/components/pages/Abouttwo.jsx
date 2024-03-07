@@ -1,5 +1,5 @@
 import React from 'react'
-import shipping from "../about/image/shipping.png";
+import shipping from "../pages/image/shipping.png";
 
 
 const Abouttwo = () => {

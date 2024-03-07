@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import About from '../about/About'
+import About from '../pages/About'
 import Home from '../Home/Home'
 import Shop from '../shop/Shop'
 import Blog from '../blog/Blog'
@@ -15,7 +15,7 @@ const Routess = () => {
     <div>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
+        <Route path='/about' element={< About/>} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/product' element={<Product />} />
         <Route path='/features' element={<Features />} />
@@ -24,6 +24,7 @@ const Routess = () => {
         <Route path='/all' element={<All />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Log />} />
+
 
       </Routes>
     </div>
