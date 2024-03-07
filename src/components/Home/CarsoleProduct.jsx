@@ -1,8 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Prasjahtjtjtgit stat
-// Hrishi changes
+// Prashat\nt nsakjdkjas
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
