@@ -6,10 +6,10 @@ import Shop from '../shop/Shop'
 import Blog from '../blog/Blog'
 import Product from '../product/Product'
 import Features from '../features/Features'
-import Portfolio from '../portfolio/Portfolio'
 import All from '../portfolio/All'
 import Register from '../authentication/Register'
 import Log from '../authentication/Log'
+import Portfolio from '../portfolio/Portfolio'
 const Routess = () => {
   return (
     <div>
@@ -20,7 +20,7 @@ const Routess = () => {
         <Route path='/product' element={<Product />} />
         <Route path='/features' element={<Features />} />
         <Route path='/blog' element={<Blog />} />
-        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/portfolio' element={<Portfolio/>} />
         <Route path='/all' element={<All />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Log />} />
