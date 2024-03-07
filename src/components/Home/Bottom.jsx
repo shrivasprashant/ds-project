@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const Card = ({ imageSrc, title, paragraph1, paragraph2 }) => {
     const [hovered, setHovered] = useState(false);
+    // hrishi
     return (
         <div className=" bg-gray-200 p-2 rounded-lg shadow-lg overflow-hidden m-2">
             <img
