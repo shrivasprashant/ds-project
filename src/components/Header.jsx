@@ -63,7 +63,7 @@ const Header = () => {
                 <div className="logo">
                     <img className='w-[100px] md:w-[200px]' src={vitotaLogo} alt="" />
                 </div>
-                <div className="links hidden md:flex gap-14 capitalize text-lg text-black p-5">
+                <div className="links hidden md:flex gap-14 capitalize text-lg text-black ">
                     <NavLink className={(e) => (e.isActive ? "text-black font-bold " : "text-black ")} to="/">home</NavLink>
                     <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/shop">shop</NavLink>
                     <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/product">product</NavLink>
