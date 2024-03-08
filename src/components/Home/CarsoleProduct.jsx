@@ -28,9 +28,9 @@ export default function CarsoleProduct() {
             alt='slide1'/></SwiperSlide>
         <SwiperSlide><img src='https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_2_2ce7b884-55c4-4340-86b2-6ee5332c3356.png?v=1613696346'   
             alt='slide1'/></SwiperSlide>
-             <SwiperSlide><img src='https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_2_2ce7b884-55c4-4340-86b2-6ee5332c3356.png?v=1613696346'   
+        <SwiperSlide><img src='https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_2_2ce7b884-55c4-4340-86b2-6ee5332c3356.png?v=1613696346'   
             alt='slide1'/></SwiperSlide>
-             <SwiperSlide><img src='https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_2_2ce7b884-55c4-4340-86b2-6ee5332c3356.png?v=1613696346'   
+        <SwiperSlide><img src='https://ps-beautyshop.myshopify.com/cdn/shop/files/Slider_banner_2_2ce7b884-55c4-4340-86b2-6ee5332c3356.png?v=1613696346'   
             alt='slide1'/></SwiperSlide>
         
       </Swiper>

@@ -76,7 +76,7 @@ const Header = () => {
                                     <Link to="/about" className="block  px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">About us</Link>
                                     <Link to="/contact" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Contact Us</Link>
                                     <Link to="/faq" className="block  px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Faq</Link>
-                                    <Link to="/portfoloio" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Portfolio</Link>
+                                    <Link to="/portfolio" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Portfolio</Link>
                                     <Link to="/search" className="block  px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Search</Link>
                                     <Link to="/wishlist" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Wishlist</Link>
                                     <Link to="/lookbook" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Lok Book</Link>
