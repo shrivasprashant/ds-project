@@ -23,17 +23,19 @@ const Header = () => {
 
 
     const openDropdown = () => {
-        setIsOpen(true);
+        setTimeout(() => {
+            setIsOpen(true);
+        }, 300); // Adjust the delay time (in milliseconds) as needed
     };
 
     const openDrop = () => {
         setIsOn(true);
     };
-
     const closeDropdown = () => {
-        setIsOpen(false);
+        setTimeout(() => {
+            setIsOpen(false);
+        }, 300); // Adjust the delay time (in milliseconds) as needed
     };
-
     const closeDrop = () => {
         setIsOn(false);
     };
@@ -90,7 +92,7 @@ const Header = () => {
                         <li className='p-5'>home</li>
                         <li className='p-5'>shop</li>
                         <li className='p-5'>product</li>
-                        <li className='p-5'>features</li>
+                        <li className='p-5'>features</li> 
                         <li className='p-5'>pages</li>
                         <li className='p-5'>blog</li>
                     </ul>
