@@ -10,11 +10,15 @@ import All from '../portfolio/All'
 import Register from '../authentication/Register'
 import Log from '../authentication/Log'
 import Portfolio from '../portfolio/Portfolio'
+import Cart from '../Home/Cart'
+
 const Routess = () => {
   return (
     <div>
+       
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/cart' element={<Cart/>}/>
         <Route path='/about' element={< About/>} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/product' element={<Product />} />
@@ -27,6 +31,8 @@ const Routess = () => {
 
 
       </Routes>
+      
+     
     </div>
   )
 }

@@ -10,7 +10,7 @@ const Cart = () => {
         dispatch(remove(id));
     };
     const updateItemQuantity = (id, quantity) => {
-        if(quantity>=0){
+        if(quantity>=1){
         dispatch(updateQuantity({ id, quantity }));
         }
     };

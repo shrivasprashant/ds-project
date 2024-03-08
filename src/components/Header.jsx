@@ -9,7 +9,12 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { IoIosArrowDown } from "react-icons/io";
 import vitotaLogo from "../assets/image/vitotoa__logo.png";
 import { Link, NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FaShoppingCart } from "react-icons/fa";
+ import { useSelector } from 'react-redux';
 const Header = () => {
+    const Selector=useSelector(state=>state.cart)
     const [toggle, settoggle] = useState(false)
 
     const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +44,7 @@ const Header = () => {
                     <h5 className='text-sm'>Announce something here</h5>
                     <h5 className='text-sm'><IoCall className='inline-block mr-1 text-pink-400' /> CALL US: +918319384910</h5>
                 </div>
-                <div className="flex gap-3 text-sm text-[#9e9d9d]">
+                <div className="flex gap-3 text-sm text-[#9e9d9d] cursor-pointer">
                     <h5> <FaHeart className='inline-block mr-1 text-pink-400' /> Wishlist </h5>
                     <div className="relative" onMouseEnter={openDropdown} onMouseLeave={closeDropdown}>
                         <h5><MdAccountCircle className='inline-block mr-1 text-pink-400' /> My Account <IoIosArrowDown className='inline-block' /></h5>
@@ -58,8 +63,8 @@ const Header = () => {
                 <div className="logo">
                     <img className='w-[100px] md:w-[200px]' src={vitotaLogo} alt="" />
                 </div>
-                <div className="links hidden md:flex gap-14 capitalize text-lg text-black">
-                    <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/">home</NavLink>
+                <div className="links hidden md:flex gap-14 capitalize text-lg text-black p-5">
+                    <NavLink className={(e) => (e.isActive ? "text-black font-bold " : "text-black ")} to="/">home</NavLink>
                     <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/shop">shop</NavLink>
                     <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/product">product</NavLink>
                     <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/features">features</NavLink>
@@ -90,10 +95,13 @@ const Header = () => {
                         <li className='p-5'>blog</li>
                     </ul>
                 </div>
-                <div className="flex items-center justify-center text-2xl gap-3">
+                <div className="flex items-center justify-center text-2xl gap-3 cursor-pointer">
                     <CiSearch />
                     <IoSettingsOutline />
-                    <CiShoppingBasket />
+                    <Link to="/cart" className="flex items-center  gap-1 text-black">
+  <FaShoppingCart className='size-6  hover:text-pink-500 '/> 
+  <span className="text-sm ml text-black   hover:text-pink-500">{Selector.length}</span>
+</Link>                    
                     {
                         toggle ? <IoClose onClick={() => settoggle(!toggle)} className='text-black text-2xl md:hidden block' />
                             : <AiOutlineMenu onClick={() => settoggle(!toggle)} className='text-black text-2xl md:hidden block' />

@@ -9,14 +9,16 @@ import Bottom from './Bottom'
 
 const Home = () => {
   return (
-    <div className="w-full">
+    <div className="relative">
       <Background/>
+      <div className="relative z-10" >
       <Carsole />
       <BeautyImage/>
       <ActiveSlider/>
-      {/* <ProductList/> */}
+      <ProductList/>
       <Layer/>
       <Bottom/>
+      </div>
     </div>
 
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import { Product } from './project/project'
 import {  useDispatch } from 'react-redux'
 import { add } from './store/cartSlice'
-// Hrishi jsain
+
 
 const ProductList = () => {
  
@@ -17,7 +17,7 @@ const ProductList = () => {
 
   return (
     <>
-    <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 bg-white'>
+    <div className='grid grid-cols-1  sm:grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 bg-pink-100 '>
     
     {Product.map((item) => (
         <div key={item.id} className='relative flex flex-col rounded-xl bg-white shadow-lg overflow-hidden'>

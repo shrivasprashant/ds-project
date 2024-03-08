@@ -9,7 +9,7 @@ const cartSlice=createSlice({
         add(state,action){
             const newItem = {
                 ...action.payload,
-                quantity: 0,  
+                quantity: 1,  
             };
             state.push(newItem);
         },
