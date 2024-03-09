@@ -39,7 +39,7 @@ const Portfolio = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
         {filteredProducts.map(product => (
           <div key={product.id} className="bg-white rounded-lg shadow-lg p-10">
             <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
