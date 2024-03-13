@@ -3,6 +3,7 @@ import Aboutone from './Aboutone'
 import Abouttwo from './Abouttwo'
 import AboutSwaper from './AboutSwaper'
 import Team from './Team'
+// this is done by prsh
 
 
 const About = () => {
