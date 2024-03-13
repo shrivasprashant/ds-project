@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="relative">
       <Background/>
-      <div className="relative z-10" >
+      <div className="relative z-10">
       <Carsole />
       <BeautyImage/>
       <ActiveSlider/>

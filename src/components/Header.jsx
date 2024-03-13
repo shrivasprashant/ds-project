@@ -73,7 +73,7 @@ const Header = () => {
                     <div className="relative" onMouseEnter={openDrop} onMouseLeave={closeDrop}>
                         <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/">pages</NavLink>
                         {isOn && (
-                            <div className="absolute z-10 mt-2 w-32 text-center rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                            <div className="absolute z-[10] mt-2 w-32 text-center rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                     <Link to="/about" className="block  px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">About us</Link>
                                     <Link to="/contact" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Contact Us</Link>
@@ -81,7 +81,7 @@ const Header = () => {
                                     <Link to="/portfolio" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Portfolio</Link>
                                     <Link to="/search" className="block  px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Search</Link>
                                     <Link to="/wishlist" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Wishlist</Link>
-                                    <Link to="/lookbook" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Lok Book</Link>
+                                    <Link to="/lookbook" className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">LookBook</Link>
                                 </div>
                             </div>
                         )}
