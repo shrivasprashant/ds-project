@@ -25,7 +25,7 @@ const Header = () => {
     const openDropdown = () => {
         setTimeout(() => {
             setIsOpen(true);
-        }, 300); // Adjust the delay time (in milliseconds) as needed
+        }, 3000); // Adjust the delay time (in milliseconds) as needed
     };
 
     const openDrop = () => {
@@ -34,7 +34,7 @@ const Header = () => {
     const closeDropdown = () => {
         setTimeout(() => {
             setIsOpen(false);
-        }, 300); // Adjust the delay time (in milliseconds) as needed
+        }, 3000); // Adjust the delay time (in milliseconds) as needed
     };
     const closeDrop = () => {
         setIsOn(false);
@@ -71,7 +71,7 @@ const Header = () => {
                     <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/product">product</NavLink>
                     <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/features">features</NavLink>
                     <div className="relative" onMouseEnter={openDrop} onMouseLeave={closeDrop}>
-                        <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/">pages</NavLink>
+                        <NavLink className={(e) => (e.isActive ? "text-black font-bold" : "text-black")} to="/about">pages</NavLink>
                         {isOn && (
                             <div className="absolute z-[10] mt-2 w-32 text-center rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">

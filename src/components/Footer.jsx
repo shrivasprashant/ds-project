@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
         <div className="absolute right-6 bottom-10 p-4 bg-red-400 rounded-full"><a href=""><MdKeyboardDoubleArrowUp /></a></div>
       </div>
-      <div className="ftr w-full py-8 px-10 text-black bg-red-200">
+      <div className="ftr w-full py-8 px-10 text-black bg-[#FFFFFF]">
         <p className='text-black'>{currentYear} -   Copy Right by XYZ</p>
       </div>
     </div>
